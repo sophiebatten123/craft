@@ -1,0 +1,19 @@
+columnSuffix: wanzqbot
+contentColumnType: text
+fieldGroup: 1689740c-22b6-43d3-9572-3f55b0be5692 # Global
+handle: plainText
+instructions: null
+name: 'Plain Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
