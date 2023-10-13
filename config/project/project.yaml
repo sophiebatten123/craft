@@ -1,19 +1,35 @@
-dateModified: 1697126876
+dateModified: 1697198351
 email:
   fromEmail: sophie@burnthebook.co.uk
   fromName: 'Craft Test'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  mainLocalUploads:
+    hasUrls: true
+    name: 'Main Local Uploads'
+    settings:
+      path: '@webroot/web/images/uploads/homepage'
+    type: craft\fs\Local
+    url: '@web/web/images/uploads/homepage'
 meta:
   __names__:
+    1e7f8707-c440-418b-acdd-8726aafd5b46: 'Website Images' # Website Images
     2f1cf2a9-7627-452e-9c38-52bd7b0aae10: Homepage # Homepage
     10fce72c-c38c-4b38-8822-d2f3c68fd0df: 'Craft Test' # Craft Test
     27cff0f8-38ac-4c08-8157-33cead92a4a5: 'Plain Text' # Plain Text
     3307d919-555f-4885-9188-4adbc6aafe38: Common # Common
     1689740c-22b6-43d3-9572-3f55b0be5692: Global # Global
+    c7f30bdb-6903-4ae7-94e4-4771b06d1bbd: Image # Image
     d76ed48e-19d1-4586-8b04-e0dc7e45aad5: Homepage # Homepage
+    ebe7247c-f452-438f-a3aa-2f9f632e525c: 'Optimize Image' # Optimize Image
     ee75c6db-db5c-49b5-bfaf-50b6f0af8795: 'Rich Text' # Rich Text
     f65f466c-dabb-4e18-b1ce-18afd0799eea: 'Craft Test' # Craft Test
 plugins:
+  image-optimize:
+    edition: standard
+    enabled: true
+    licenseKey: W2HH0U55H0PG16NBIU35W5UH
+    schemaVersion: 1.0.0
   redactor:
     edition: standard
     enabled: true

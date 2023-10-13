@@ -1,6 +1,24 @@
 {% extends '_inc/_layout' %}
 {% block content %}
     <div>
+        <div>
+            {# {% set image = craft.entries.section('homepage').one() %}
+
+            {% if image %}
+                {{ image }}
+                {# {% set optimizedImage = img.imageOptimize.one() %}
+
+                {% if optimizedImage %}
+                    <img src="{{ optimizedImage.url }}" alt="{{ img.title }}">
+                {% else %}
+                    <img src="{{ img.image[0].url }}" alt="{{ img.title }}">
+                {% endif %} #}
+            {# {% endif %} #}
+
+            {% set img = entry.image.one() %}
+            {% set responsiveImage = img.optimizeImage %}
+            <img class="img-fluid" src="{{ responsiveImage.src() }}" srcset="{{ responsiveImage.srcset() }}" sizes="(min-width: 768px) 50vw, 100vw" alt="{{ img.title }}"/>
+        </div>
         {{ entry.title }}
 
          {{ entry.plainText }}
